@@ -44,7 +44,7 @@ export default function SelectedMovie({ id, onClose, onAddWatched, watched }) {
       async function getMovieDetails() {
         setLoading(true);
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${KEY}&i=${id}`
+          `https://www.omdbapi.com/?apikey=${KEY}&i=${id}`
         );
 
         const data = await res.json();
